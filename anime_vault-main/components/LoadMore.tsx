@@ -14,7 +14,7 @@ function LoadMore() {
   useEffect(() => {
     if (inView) {
       // loading the next part of teh opage
-      fetchAnime(2).then((res) => {
+      fetchAnime(page).then((res) => {
         setData([...data, ...res]);
         // updating the oage(data)
         page++;
